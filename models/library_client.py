@@ -21,7 +21,7 @@ class LibraryClient(BaseModel):
     )
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name}'
+        return f'{self.first_name.name} {self.last_name.name}'
 
     class Meta:
         table_name = 'library_client'
